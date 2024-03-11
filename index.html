@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="top">
+        <img src="/assets/images/logo.png" alt="">
+        <div class="header">
+            <h1>GITHINJI KELVIN</h1>
+            <h3>Software Engineer</h3>
+        </div>
+    </div>
+    <div class="nav1">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="/assets/images/black-profile.jpeg" alt="">
+                </div>
+                <div class="col2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Passionate Software Engineer with 1 year of experience in developing
+                        web applications and backend systems. Skilled at writing clear,
+                        concise code that is easy to maintain and troubleshoot.
+                        Experienced in working with both small and large teams across
+                        multiple projects and companies. Able to work independently of
+                        remote locations or in office environments as needed by the company.</p>
+
+                    <div class="tab-titles">
+                        <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Mobile App Development</span><br>Building Android/Ios Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Web App Development</li>
+                            <li><span>2020 - 2023</span><br>Designing Web/App Interfaces</li>
+                            <li><span>2019 - 2020</span><br>Building Android/Ios Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Moringa</li>
+                            <li><span>2018 - 2023</span><br>Catholic University</li>
+                            <li><span>2013 - 2016</span><br>High SChool</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <h2 class="ptitle">Projects</h2>
+        <p>Here are some of my projects</p>
+        <div class="project-lists">
+            <ul>
+                <li><a href="">Project 1</a></li>
+                <li><a href="">Project 2</a></li>
+                <li><a href="">Project 3</a></li>
+            </ul>
+        </div>
+        <div class="project1">
+            <img src="/assets/images/dev.jpg" alt="">
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Contact Me</h1>
+        <p>Email: kelvin.githinji@moringaschool.com</p>
+        <p>Phone: 987-654-321-</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+<footer>
+    <p>Githinji Kelvin 2024</p>
+</footer>
+
+</html>
